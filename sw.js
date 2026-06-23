@@ -1,5 +1,5 @@
-const CACHE_NAME = 'bishvilach-v2';
-const STATIC_ASSETS = ['/', '/index.html'];
+const CACHE_NAME = 'bishvilach-v3';
+const STATIC_ASSETS = ['./', './index.html'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
@@ -38,8 +38,8 @@ self.addEventListener('message', (e) => {
       self.registration.showNotification(title, {
         body,
         tag,
-        icon: '/icon-192.svg',
-        badge: '/icon-192.svg',
+        icon: './icon-192.svg',
+        badge: './icon-192.svg',
         dir: 'rtl',
         lang: 'he',
         vibrate: [200, 100, 200],
@@ -59,7 +59,7 @@ self.addEventListener('notificationclick', (e) => {
       if (list.length > 0) {
         list[0].focus();
       } else {
-        clients.openWindow('/');
+        clients.openWindow('./');
       }
     })
   );
