@@ -2,7 +2,7 @@
   "name": "מועדון בשבילך",
   "short_name": "מועדון בשבילך",
   "description": "מועדון בשבילך - מערכת ניהול",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f1f5f9",
@@ -10,6 +10,6 @@
   "dir": "rtl",
   "lang": "he",
   "icons": [
-    { "src": "/icon-192.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    { "src": "./icon-192.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }
